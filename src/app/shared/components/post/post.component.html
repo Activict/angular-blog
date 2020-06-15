@@ -1,0 +1,12 @@
+<div class="card" (click)="onPost(post.id)">
+
+  <div class="card-header">
+    <h2>{{post.title}}</h2>
+  </div>
+
+  <div>
+    <small>{{post.date | date: 'dd.MM.yyyy'}}</small>
+    <small>{{post.author}}</small>
+  </div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="link-blog">
+  <a routerLink="/">to blog</a>
+</div>
+
+<nav class="navbar bg-primary">
+  <h1>
+    <a routerLink="login">Angular admin</a>
+  </h1>
+
+  <div class="menu" *ngIf="auth.isAuthenticated()">
+    <div routerLinkActive="active">
+      <a [routerLink]="['/admin', 'dashboard']">Главная</a>
+    </div>
+    <div routerLinkActive="active">
+      <a [routerLink]="['/admin', 'create']">Создать</a>
+    </div>
+    <div>
+      <a href="#" (click)="logout($event)">Выйти</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <app-alert></app-alert>
+  <router-outlet></router-outlet>
+</div>

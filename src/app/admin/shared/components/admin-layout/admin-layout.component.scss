@@ -1,0 +1,44 @@
+.link-blog{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.navbar{
+  padding-bottom: 30px;
+
+  h1{
+    text-align: center;
+
+    a{
+      color: rgba(205,30,25,0.75);
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    a:hover{
+      color: rgba(205,30,25,1.0);
+      font-weight: bolder;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .menu{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+    div{
+      padding: 0 10px;
+    }
+  }
+
+}

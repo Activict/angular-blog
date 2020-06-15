@@ -1,0 +1,30 @@
+h3 {
+  text-align: center;
+}
+
+form{
+  width: 350px;
+  margin: auto;
+
+  .form-control{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+
+    label{
+      width: 90px;
+    }
+
+    small{
+      margin-left: 95px;
+      color: red;
+    }
+  }
+
+  button{
+    margin-top: 15px;
+    margin-left: 145px;
+    width: 70px;
+  }
+}
